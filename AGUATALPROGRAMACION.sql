@@ -36,7 +36,7 @@ create table suscripcion(
 	codCliente int,
     codSuscripcion int auto_increment,
     codDispensadora int,
-    precioMensual decimal,
+    precioMensual decimal(5,2),
     primary key (codSuscripcion),
     foreign key (codCliente) references cliente(codCliente)
 		on update cascade on delete cascade,
